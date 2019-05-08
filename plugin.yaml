@@ -1,0 +1,17 @@
+plugin:
+    name: 'bsbvolmachten.documenten::lang.plugin.name'
+    description: 'bsbvolmachten.documenten::lang.plugin.description'
+    author: 'BSB Volmachten'
+    icon: oc-icon-file
+    homepage: ''
+permissions:
+    manage-documents:
+        tab: 'Documenten Beheren'
+        label: 'Documenten Beheren'
+navigation:
+    main-menu-item:
+        label: Documenten
+        url: bsbvolmachten/documenten/documenten
+        icon: icon-file
+        permissions:
+            - manage-documents

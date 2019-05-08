@@ -1,0 +1,17 @@
+name: Documenten
+modelClass: BsbVolmachten\Documenten\Models\Documenten
+form: $/bsbvolmachten/documenten/models/documenten/fields.yaml
+defaultRedirect: bsbvolmachten/documenten/documenten
+create:
+    title: 'Document Toevoegen'
+    redirect: 'bsbvolmachten/documenten/documenten/update/:id'
+    redirectClose: bsbvolmachten/documenten/documenten
+    flashSave: 'Document Opgeslagen'
+update:
+    title: 'Document Bewerken'
+    redirect: bsbvolmachten/documenten/documenten
+    redirectClose: bsbvolmachten/documenten/documenten
+    flashSave: 'Document Opgeslagen'
+    flashDelete: 'Document Verwijderd'
+preview:
+    title: 'Document Weergeven'

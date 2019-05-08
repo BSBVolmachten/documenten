@@ -1,0 +1,5 @@
+title: Documenten
+modelClass: BsbVolmachten\Documenten\Models\Documenten
+nameFrom: title
+toolbar:
+    buttons: reorder_toolbar

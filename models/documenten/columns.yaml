@@ -1,0 +1,9 @@
+columns:
+    title:
+        label: 'Titel / Naam'
+        type: text
+        searchable: true
+    sort_order:
+        label: Volgorde
+        type: number
+        sortable: true

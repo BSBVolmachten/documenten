@@ -1,0 +1,32 @@
+fields:
+    title:
+        label: 'Titel / Naam'
+        span: left
+        required: 1
+        type: text
+    fileswitch:
+        label: 'Een bestand uploaden?'
+        span: left
+        type: switch
+        comment: 'U kunt of een bestand uploaden of een link naar een bestand opgeven'
+    file:
+        label: 'Bestand uploaden'
+        mode: file
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: left
+        trigger:
+            action: show
+            field: fileswitch
+            condition: checked
+        type: fileupload
+    url:
+        label: Link
+        span: left
+        trigger:
+            action: show
+            field: fileswitch
+            condition: unchecked
+        type: text
