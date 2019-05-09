@@ -1,4 +1,4 @@
-<?php namespace BsbVolmachten\Documenten;
+<?php namespace Bsbvolmachten\Documenten;
 
 use System\Classes\PluginBase;
 
