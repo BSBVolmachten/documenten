@@ -9,3 +9,5 @@
 1.0.4:
     - 'Updated table bsbvolmachten_documenten_main'
     - builder_table_update_bsbvolmachten_documenten_main_2.php
+1.0.5:
+    - 'Changed namespace from BsbVolmachten to Bsbvolmachten'
