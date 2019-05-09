@@ -1,4 +1,4 @@
-<?php namespace BsbVolmachten\Documenten\Controllers;
+<?php namespace Bsbvolmachten\Documenten\Controllers;
 
 use Backend\Classes\Controller;
 use BackendMenu;
@@ -18,6 +18,6 @@ class Documenten extends Controller
     public function __construct()
     {
         parent::__construct();
-        BackendMenu::setContext('BsbVolmachten.Documenten', 'main-menu-item');
+        BackendMenu::setContext('Bsbvolmachten.Documenten', 'main-menu-item');
     }
 }
