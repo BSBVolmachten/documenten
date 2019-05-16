@@ -11,3 +11,5 @@
     - builder_table_update_bsbvolmachten_documenten_main_2.php
 1.0.5:
     - 'Changed namespace from BsbVolmachten to Bsbvolmachten'
+1.0.6:
+    - 'Git en October pull test'
