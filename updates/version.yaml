@@ -13,3 +13,6 @@
     - 'Changed namespace from BsbVolmachten to Bsbvolmachten'
 1.0.6:
     - 'Git en October pull test'
+1.0.7:
+    - 'Fix nullable issue'
+    - bsbvolmachten_fix_sort_order.php
