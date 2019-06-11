@@ -16,3 +16,5 @@
 1.0.7:
     - 'Fix nullable issue'
     - bsbvolmachten_fix_sort_order.php
+1.1.0:
+    - 'Added component'
