@@ -12,6 +12,6 @@ navigation:
     main-menu-item:
         label: Documenten
         url: bsbvolmachten/documenten/documenten
-        icon: icon-file
+        icon: oc-icon-file
         permissions:
             - manage-documents
