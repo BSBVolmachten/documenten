@@ -2,7 +2,7 @@
 namespace Bsbvolmachten\Documenten\components;
 
 use Cms\Classes\ComponentBase;
-use Bsbvolmachten\Partners\Models\Documenten as Document;
+use Bsbvolmachten\Documenten\Models\Documenten as Document;
 
 class Documenten extends ComponentBase {
 
