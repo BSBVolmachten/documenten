@@ -14,5 +14,4 @@ class Plugin extends PluginBase
     public function registerSettings()
     {
     }
-
 }
