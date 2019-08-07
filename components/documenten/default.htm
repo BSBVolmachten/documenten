@@ -1,0 +1,18 @@
+{% if documenten %}
+<section class="about about-layout">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="heading">
+                    <h3 class="heading-section">{{ this.page.title }}</h3>
+                </div>
+                {% for document in documenten %}
+                <div class="passage">
+                    <a target="_blank" href="{% if document.file.path %}{{ document.file.path }}{% else %}{{ document.url }}{% endif %}" class="au-btn au-btn-blue au-btn-sm">{{ document.title }}</a>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+{% endif %}

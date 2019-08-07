@@ -14,7 +14,14 @@ class Documenten extends ComponentBase {
         ];
     }
 
-    public function documenten()
+    public function onRun() {
+        $documenten = $this->getDocumenten();
+        if($documenten->isNotEmpty()) {
+            $this->page['documenten'] = $documenten;
+        }
+    }
+
+    public function getDocumenten()
     {
         return Document::orderBy('sort_order', 'ASC')->get();
     }

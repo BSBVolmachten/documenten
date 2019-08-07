@@ -20,3 +20,5 @@
     - 'Added component'
 1.1.1:
     - 'Quickfix for component'
+1.1.2:
+    - 'Reworked plugin to be managed better by making it load its partial'
