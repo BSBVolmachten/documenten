@@ -1,7 +1,7 @@
 {% if privateDocuments and __SELF__.property('privateCheck') %}
     <h2>Zakelijke documenten</h2>
     {% for document in privateDocuments %}
-    <div class="passage">
+    <div>
         <a target="_blank" href="{% if document.file.path %}{{ document.file.path }}{% else %}{{ document.url }}{% endif %}" class="au-btn au-btn-default au-btn-sm">{{ document.title }}</a>
     </div>
     {% endfor %}
@@ -11,7 +11,7 @@
 {% if businessDocuments and __SELF__.property('businessCheck') %}
     <h2>Particuliere documenten</h2>
     {% for document in businessDocuments %}
-        <div class="passage">
+        <div>
             <a target="_blank" href="{% if document.file.path %}{{ document.file.path }}{% else %}{{ document.url }}{% endif %}" class="au-btn au-btn-default au-btn-sm">{{ document.title }}</a>
         </div>
     {% endfor %}
@@ -21,7 +21,7 @@
 {% if otherDocuments and __SELF__.property('otherCheck') %}
     <h2>Overige documenten</h2>
     {% for document in otherDocuments %}
-        <div class="passage">
+        <div>
             <a target="_blank" href="{% if document.file.path %}{{ document.file.path }}{% else %}{{ document.url }}{% endif %}" class="au-btn au-btn-default au-btn-sm">{{ document.title }}</a>
         </div>
     {% endfor %}
