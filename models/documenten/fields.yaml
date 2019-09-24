@@ -30,3 +30,13 @@ fields:
             field: fileswitch
             condition: unchecked
         type: text
+    category:
+        label: Categorie
+        options:
+            Particulier: Particulier
+            Zakelijk: Zakelijk
+            Overig: Overig
+        showSearch: true
+        span: left
+        required: 1
+        type: dropdown
