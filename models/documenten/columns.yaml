@@ -3,6 +3,12 @@ columns:
         label: 'Titel / Naam'
         type: text
         searchable: true
+        sortable: true
+    category:
+        label: 'Categorie'
+        type: text
+        searchable: true
+        sortable: true
     sort_order:
         label: Volgorde
         type: number

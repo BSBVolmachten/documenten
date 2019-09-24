@@ -31,3 +31,5 @@
     - 'Removed document spacing'
 1.1.6:
     - 'Fix for wrong naming of documents category header'
+1.1.7:
+    - 'Add category to columns'
