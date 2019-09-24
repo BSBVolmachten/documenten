@@ -1,18 +1,29 @@
-{% if documenten %}
-<section class="about about-layout">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="heading">
-                    <h3 class="heading-section">{{ this.page.title }}</h3>
-                </div>
-                {% for document in documenten %}
-                <div class="passage">
-                    <a target="_blank" href="{% if document.file.path %}{{ document.file.path }}{% else %}{{ document.url }}{% endif %}" class="au-btn au-btn-blue au-btn-sm">{{ document.title }}</a>
-                </div>
-                {% endfor %}
-            </div>
-        </div>
+{% if privateDocuments and __SELF__.property('privateCheck') %}
+    <h2>Zakelijke documenten</h2>
+    {% for document in privateDocuments %}
+    <div class="passage">
+        <a target="_blank" href="{% if document.file.path %}{{ document.file.path }}{% else %}{{ document.url }}{% endif %}" class="au-btn au-btn-default au-btn-sm">{{ document.title }}</a>
     </div>
-</section>
+    {% endfor %}
+    <hr>
+{% endif %}
+
+{% if businessDocuments and __SELF__.property('businessCheck') %}
+    <h2>Particuliere documenten</h2>
+    {% for document in businessDocuments %}
+        <div class="passage">
+            <a target="_blank" href="{% if document.file.path %}{{ document.file.path }}{% else %}{{ document.url }}{% endif %}" class="au-btn au-btn-default au-btn-sm">{{ document.title }}</a>
+        </div>
+    {% endfor %}
+    <hr>
+{% endif %}
+
+{% if otherDocuments and __SELF__.property('otherCheck') %}
+    <h2>Overige documenten</h2>
+    {% for document in otherDocuments %}
+        <div class="passage">
+            <a target="_blank" href="{% if document.file.path %}{{ document.file.path }}{% else %}{{ document.url }}{% endif %}" class="au-btn au-btn-default au-btn-sm">{{ document.title }}</a>
+        </div>
+    {% endfor %}
+    <hr>
 {% endif %}
