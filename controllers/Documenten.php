@@ -20,4 +20,5 @@ class Documenten extends Controller
         parent::__construct();
         BackendMenu::setContext('Bsbvolmachten.Documenten', 'main-menu-item');
     }
+
 }
