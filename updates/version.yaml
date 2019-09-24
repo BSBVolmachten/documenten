@@ -22,3 +22,5 @@
     - 'Quickfix for component'
 1.1.2:
     - 'Reworked plugin to be managed better by making it load its partial'
+1.1.3:
+  - 'Added category for file documents'
